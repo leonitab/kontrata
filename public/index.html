@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kontratat</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+form {
+    display:center; 
+	
+}
+</style>
+</head>
+<body>
+<form action ="/proj" method ="POST" >
+<div class="container" >
+	<div class="row" >
+		<div class="col-md-12" ><h1 style="color:blue">Shto kontraten e re</h1>
+<br>
+<h5>Prokurimi</h5>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputEmail4">Nr.rendor i prokurimit:</label>
+      <input name="nr_rendor" type="number" class="form-control"  placeholder="Nr.rendor i prokurimit">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputPassword4">Lloji i prokurimit:</label>
+      <input name="lloji_prokurimit"type="text" class="form-control"  placeholder="Lloji i prokurimit">
+    </div>
+  </div>
+  <div class="form-row">
+  <div class="form-group col-md-8">
+    <label for="inputAddress">Aktiviteti i prokurimit:</label>
+    <input name="aktivivteti"type="text" class="form-control"  placeholder="Aktiviteti i prokurimit">
+  </div>
+  </div>
+  <h5>Datat:</h5>
+   <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputEmail4">Data e inicimit te aktivitetit te prokurimit:</label>
+      <input name="d_inicimit"type="date" class="form-control"  >
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputPassword4">Data e publikimit te shpalljes:</label>
+      <input name="d_publikimit" type="date" class="form-control" >
+    </div>
+  </div>
+   <div class="form-row">
+  <div class="form-group col-md-8">
+    <label for="inputAddress">Data e neshkrimit te kontrates:</label>
+    <input name="d_nenshkrimit"type="date" class="form-control"  >
+  </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputEmail4">Afati per implementimin e kontrates:</label>
+      <input name="afati1 " type="date" class="form-control"  >
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputPassword4"><br></label>	
+      <input name="afati2"type="date" class="form-control"  >
+    </div>
+  </div>
+    <div class="form-row">
+  <div class="form-group col-md-8">
+    <label for="inputAddress">Data e permbylljes se kontrates(data e pranimit te perkohshem preliminar):</label>
+    <input name="d_permbylljes"type="date" class="form-control" >
+  </div>
+  </div>
+  <h5>Cmimi dhe te dhena tjera</h5> 
+   <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputEmail4">Cmimi i kontrates duke perfshire te gjitha taksat:</label>
+      <input name="cmimi_k"type="number" class="form-control"  placeholder="Cmimi i kontrates">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputPassword4">Cmimi total i paguar per kontraten:</label>
+      <input name="cmimi_t" type="number" class="form-control"  placeholder="Cmimi total">
+    </div>
+  </div>
+   <div class="form-row">
+  <div class="form-group col-md-8">
+    <label for="inputAddress">Emri i te cilit i eshte dhene kontrata:</label>
+    <input name="emri"type="text" class="form-control"  placeholder="Emri dhe mbiemri">
+  </div>
+  </div>
+  
+  <button  type="submit" class="btn btn-lg btn-primary" value="Submit">Dergo</button>
+<button type="reset" class="btn btn-secondary btn-lg"  value="Reset">Fshij</button>
+
+</form>
+ <ul>
+	
+		<a href="/proj/">Show</a>
+		<a href="/proj/edit/">Edit</a>
+		<a href="/proj/delete/">Delete</a>
+		</li>
+
+</ul>
+</body>
+</html>
